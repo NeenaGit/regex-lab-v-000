@@ -1,10 +1,9 @@
 def starts_with_a_vowel?(word)
- word.match(^[aeiouAEIOU]w+)
+ word.match(/^[aeiouAEIOU]w+/)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-
-end
+  text.scan(/un\w+ing\b/)
 
 def words_five_letters_long(text)
 
